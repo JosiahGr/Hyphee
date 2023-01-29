@@ -11,7 +11,7 @@ import SwiftUI
 struct HypheeApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            HypheeTabView()
         }
     }
 }

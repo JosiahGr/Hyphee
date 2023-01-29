@@ -8,18 +8,20 @@
 
 /* Begin PBXBuildFile section */
 		33E3E3CD298646B50070FBF7 /* HypheeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33E3E3CC298646B50070FBF7 /* HypheeApp.swift */; };
-		33E3E3CF298646B50070FBF7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33E3E3CE298646B50070FBF7 /* ContentView.swift */; };
+		33E3E3CF298646B50070FBF7 /* HypheeTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33E3E3CE298646B50070FBF7 /* HypheeTabView.swift */; };
 		33E3E3D1298646B60070FBF7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 33E3E3D0298646B60070FBF7 /* Assets.xcassets */; };
 		33E3E3D5298646B60070FBF7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 33E3E3D4298646B60070FBF7 /* Preview Assets.xcassets */; };
+		33E3E3DE29864A180070FBF7 /* UpcomingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33E3E3DD29864A180070FBF7 /* UpcomingView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		33E3E3C9298646B50070FBF7 /* Hyphee.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Hyphee.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		33E3E3CC298646B50070FBF7 /* HypheeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HypheeApp.swift; sourceTree = "<group>"; };
-		33E3E3CE298646B50070FBF7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		33E3E3CE298646B50070FBF7 /* HypheeTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HypheeTabView.swift; sourceTree = "<group>"; };
 		33E3E3D0298646B60070FBF7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		33E3E3D2298646B60070FBF7 /* Hyphee.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Hyphee.entitlements; sourceTree = "<group>"; };
 		33E3E3D4298646B60070FBF7 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		33E3E3DD29864A180070FBF7 /* UpcomingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpcomingView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,7 +55,8 @@
 			isa = PBXGroup;
 			children = (
 				33E3E3CC298646B50070FBF7 /* HypheeApp.swift */,
-				33E3E3CE298646B50070FBF7 /* ContentView.swift */,
+				33E3E3CE298646B50070FBF7 /* HypheeTabView.swift */,
+				33E3E3DD29864A180070FBF7 /* UpcomingView.swift */,
 				33E3E3D0298646B60070FBF7 /* Assets.xcassets */,
 				33E3E3D2298646B60070FBF7 /* Hyphee.entitlements */,
 				33E3E3D3298646B60070FBF7 /* Preview Content */,
@@ -139,8 +142,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				33E3E3CF298646B50070FBF7 /* ContentView.swift in Sources */,
+				33E3E3CF298646B50070FBF7 /* HypheeTabView.swift in Sources */,
 				33E3E3CD298646B50070FBF7 /* HypheeApp.swift in Sources */,
+				33E3E3DE29864A180070FBF7 /* UpcomingView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
