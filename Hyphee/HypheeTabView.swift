@@ -13,20 +13,20 @@ struct HypheeTabView: View {
             NavigationView {
                 UpcomingView()
             }
-                    .tabItem {
-                        Image(systemName:"calendar")
-                        Text("Upcoming")
-                    }
-                Text ("Hello 2")
-                    .tabItem {
-                        Image(systemName:"magnifyingglass")
-                        Text("Discover")
-                    }
-                Text ("Hello 3")
-                    .tabItem {
-                        Image(systemName:"gobackward")
-                        Text("History")
-                    }
+            .tabItem {
+                Image(systemName:"calendar")
+                Text("Upcoming")
+            }
+            Text ("Hello 2")
+                .tabItem {
+                    Image(systemName:"magnifyingglass")
+                    Text("Discover")
+                }
+            Text ("Hello 3")
+                .tabItem {
+                    Image(systemName:"gobackward")
+                    Text("History")
+                }
         }
     }
 }

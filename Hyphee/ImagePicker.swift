@@ -27,16 +27,16 @@ struct ImagePicker: UIViewControllerRepresentable {
         
     }
     
-        class Coordinator: NSObject, UIImagePickerControllerDelegate & UINavigationControllerDelegate {
-            let parent: ImagePicker
-            
-            init(_ parent: ImagePicker) {
-                self.parent = parent
-            }
-            
+    class Coordinator: NSObject, UIImagePickerControllerDelegate & UINavigationControllerDelegate {
+        let parent: ImagePicker
+        
+        init(_ parent: ImagePicker) {
+            self.parent = parent
+        }
+        
         func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
-                if let image = info[.originalImage] as? UIImage {
-                    parent.imageData = image.pngData()
+            if let image = info[.originalImage] as? UIImage {
+                parent.imageData = image.pngData()
             }
             
             parent.presentationMode.wrappedValue.dismiss()

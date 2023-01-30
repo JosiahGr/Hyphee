@@ -11,6 +11,7 @@
 		33CC82C9298734BA00B3A989 /* HypheeEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33CC82C8298734BA00B3A989 /* HypheeEvent.swift */; };
 		33CC82CB29873D3E00B3A989 /* FormLabelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33CC82CA29873D3E00B3A989 /* FormLabelView.swift */; };
 		33CC8320298748BC00B3A989 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33CC831F298748BC00B3A989 /* ImagePicker.swift */; };
+		33CC83222988259600B3A989 /* HypheeEventTileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33CC83212988259600B3A989 /* HypheeEventTileView.swift */; };
 		33E3E3CD298646B50070FBF7 /* HypheeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33E3E3CC298646B50070FBF7 /* HypheeApp.swift */; };
 		33E3E3CF298646B50070FBF7 /* HypheeTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33E3E3CE298646B50070FBF7 /* HypheeTabView.swift */; };
 		33E3E3D1298646B60070FBF7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 33E3E3D0298646B60070FBF7 /* Assets.xcassets */; };
@@ -23,6 +24,7 @@
 		33CC82C8298734BA00B3A989 /* HypheeEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HypheeEvent.swift; sourceTree = "<group>"; };
 		33CC82CA29873D3E00B3A989 /* FormLabelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormLabelView.swift; sourceTree = "<group>"; };
 		33CC831F298748BC00B3A989 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
+		33CC83212988259600B3A989 /* HypheeEventTileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HypheeEventTileView.swift; sourceTree = "<group>"; };
 		33E3E3C9298646B50070FBF7 /* Hyphee.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Hyphee.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		33E3E3CC298646B50070FBF7 /* HypheeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HypheeApp.swift; sourceTree = "<group>"; };
 		33E3E3CE298646B50070FBF7 /* HypheeTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HypheeTabView.swift; sourceTree = "<group>"; };
@@ -65,6 +67,7 @@
 				33E3E3CC298646B50070FBF7 /* HypheeApp.swift */,
 				33E3E3CE298646B50070FBF7 /* HypheeTabView.swift */,
 				33E3E3DD29864A180070FBF7 /* UpcomingView.swift */,
+				33CC83212988259600B3A989 /* HypheeEventTileView.swift */,
 				33CC82C62987345800B3A989 /* CreateHypheeEventView.swift */,
 				33CC831F298748BC00B3A989 /* ImagePicker.swift */,
 				33CC82CA29873D3E00B3A989 /* FormLabelView.swift */,
@@ -156,6 +159,7 @@
 			files = (
 				33CC82CB29873D3E00B3A989 /* FormLabelView.swift in Sources */,
 				33E3E3CF298646B50070FBF7 /* HypheeTabView.swift in Sources */,
+				33CC83222988259600B3A989 /* HypheeEventTileView.swift in Sources */,
 				33E3E3CD298646B50070FBF7 /* HypheeApp.swift in Sources */,
 				33CC8320298748BC00B3A989 /* ImagePicker.swift in Sources */,
 				33CC82C9298734BA00B3A989 /* HypheeEvent.swift in Sources */,
