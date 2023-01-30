@@ -11,6 +11,7 @@ struct CreateHypheeEventView: View {
     
     @StateObject var hypheeEvent = HypheeEvent()
     @State var showTime = false
+    @State var showImagePicker = false
     
     var body: some View {
         Form {
@@ -28,6 +29,48 @@ struct CreateHypheeEventView: View {
                     FormLabelView(title: "Time", iconSystemName: "clock.fill", color: .blue)
                 }
             }
+            
+            
+            Section {
+                if hypheeEvent.image() == nil {
+                    HStack {
+                    FormLabelView(title: "Image", iconSystemName: "camera", color: .purple)
+                    
+                    Spacer()
+                    
+                    Button(action: {
+                        showImagePicker = true
+                    }) {
+                        Text("Pick Image")
+                    }
+                }
+            } else {
+                HStack {
+                FormLabelView(title: "Image", iconSystemName: "camera", color: .purple)
+                
+                Spacer()
+                
+                Button(action: {
+                    hypheeEvent.imageData = nil
+                }) {
+                    Text("Remove Image")
+                        .foregroundColor(.red)
+                }
+                .buttonStyle(BorderlessButtonStyle())
+            }
+                Button(action: {
+                    showImagePicker = true
+                }) {
+                    hypheeEvent.image()!
+                        .resizable()
+                        .aspectRatio(contentMode: .fit)
+                }
+                .buttonStyle(BorderlessButtonStyle())
+            }
+        }
+            .sheet(isPresented: $showImagePicker) {
+            ImagePicker(imageData: $hypheeEvent.imageData)
+        }
             
             Section {
                 ColorPicker(selection: $hypheeEvent.color) {
