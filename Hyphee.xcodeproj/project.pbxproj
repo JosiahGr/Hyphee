@@ -20,7 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		338E182F2988706E002FC3D1 /* FormLabelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormLabelView.swift; sourceTree = SOURCE_ROOT; };
+		338E182F2988706E002FC3D1 /* FormLabelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = FormLabelView.swift; path = ../FormLabelView.swift; sourceTree = "<group>"; };
 		33CC82C62987345800B3A989 /* CreateHypheeEventView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateHypheeEventView.swift; sourceTree = "<group>"; };
 		33CC82C8298734BA00B3A989 /* HypheeEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HypheeEvent.swift; sourceTree = "<group>"; };
 		33CC831F298748BC00B3A989 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
