@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		336E52792989C47300FC483C /* HypheeEventListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 336E52782989C47300FC483C /* HypheeEventListView.swift */; };
 		338E18302988706E002FC3D1 /* FormLabelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 338E182F2988706E002FC3D1 /* FormLabelView.swift */; };
 		338E18362989609E002FC3D1 /* SwiftDate in Frameworks */ = {isa = PBXBuildFile; productRef = 338E18352989609E002FC3D1 /* SwiftDate */; };
 		338E18382989641D002FC3D1 /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 338E18372989641D002FC3D1 /* DataController.swift */; };
@@ -23,6 +24,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		336E52782989C47300FC483C /* HypheeEventListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HypheeEventListView.swift; sourceTree = "<group>"; };
 		338E182F2988706E002FC3D1 /* FormLabelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormLabelView.swift; sourceTree = "<group>"; };
 		338E18372989641D002FC3D1 /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
 		33CC82C62987345800B3A989 /* CreateHypheeEventView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateHypheeEventView.swift; sourceTree = "<group>"; };
@@ -63,6 +65,7 @@
 		338E183A298969E8002FC3D1 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				336E52782989C47300FC483C /* HypheeEventListView.swift */,
 				33CC82C62987345800B3A989 /* CreateHypheeEventView.swift */,
 				33CC83212988259600B3A989 /* HypheeEventTileView.swift */,
 				338E182F2988706E002FC3D1 /* FormLabelView.swift */,
@@ -194,6 +197,7 @@
 				33CC8320298748BC00B3A989 /* ImagePicker.swift in Sources */,
 				338E18382989641D002FC3D1 /* DataController.swift in Sources */,
 				33CC82C9298734BA00B3A989 /* HypheeEvent.swift in Sources */,
+				336E52792989C47300FC483C /* HypheeEventListView.swift in Sources */,
 				338E18302988706E002FC3D1 /* FormLabelView.swift in Sources */,
 				33CC82C72987345800B3A989 /* CreateHypheeEventView.swift in Sources */,
 				33E3E3DE29864A180070FBF7 /* UpcomingView.swift in Sources */,
@@ -331,6 +335,8 @@
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				INFOPLIST_KEY_UIRequiresFullScreen = NO;
+				INFOPLIST_KEY_UIStatusBarStyle = "";
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -369,6 +375,8 @@
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				INFOPLIST_KEY_UIRequiresFullScreen = NO;
+				INFOPLIST_KEY_UIStatusBarStyle = "";
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";

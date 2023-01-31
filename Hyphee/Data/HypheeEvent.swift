@@ -33,7 +33,7 @@ class HypheeEvent: ObservableObject, Identifiable, Codable {
         try container.encode(date, forKey: CodingKeys.date)
         try container.encode(title, forKey: CodingKeys.title)
         try container.encode(url, forKey: CodingKeys.url)
-        try container.encode(UIColor(color).hexString(), forKey: CodingKeys.id)
+        try container.encode(UIColor(color).hexString(), forKey: CodingKeys.color)
         try container.encode(imageData, forKey: CodingKeys.imageData)
     }
     
