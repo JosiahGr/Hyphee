@@ -13,20 +13,7 @@ struct UpcomingView: View {
     @ObservedObject var data = DataController.shared
     
     var body: some View {
-        ScrollView {
-            VStack {
-                if data.hypheeEvents.count == 0 {
-                    Text("Nothing to look forward to yet. \nAdd an event in the Discover tab to get Hyphee about!")
-                        .multilineTextAlignment(.center)
-                        .bold()
-                    
-                } else {
-                    ForEach(data.hypheeEvents) { hypheeEvent in
-                        HypheeEventTileView(hypheeEvent: hypheeEvent)
-                    }
-                }
-            }
-        }
+        HypheeEventListView(HypheeEvents: data.upcomingHypheeEvents, noEventsText: "Create an event or check out the Discover tab!")
         .navigationTitle("Upcoming")
         .navigationBarItems(trailing:
                                 Button(action: {
@@ -43,16 +30,6 @@ struct UpcomingView: View {
 
 struct UpcomingView_Previews: PreviewProvider {
     static var previews: some View {
-        
-        Group {
-            
-//            NavigationView {
-//                UpcomingView(hypheeEvents: [testHypheeEvent1, testHypheeEvent2])
-//            }
-//
-//            NavigationView {
-//                UpcomingView(hypheeEvents: [])
-//            }
-        }
+        UpcomingView()
     }
 }

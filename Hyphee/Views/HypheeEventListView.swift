@@ -19,6 +19,8 @@ struct HypheeEventListView: View {
                     Text(noEventsText)
                         .multilineTextAlignment(.center)
                         .bold()
+                        .padding(.top, 200)
+                        .padding(.horizontal, 20)
                     
                 } else {
                     ForEach(HypheeEvents) { hypheeEvent in
@@ -34,6 +36,9 @@ struct HypheeEventListView_Previews: PreviewProvider {
     static var previews: some View {
         Group {
             HypheeEventListView(HypheeEvents: [testHypheeEvent1, testHypheeEvent2], noEventsText: "No Previous History Yet")
+            
+            HypheeEventListView(HypheeEvents: [], noEventsText: "No Previous History Yet")
+            
         }
     }
 }

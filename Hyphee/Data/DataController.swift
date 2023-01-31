@@ -12,6 +12,14 @@ class DataController: ObservableObject {
     
     @Published var hypheeEvents: [HypheeEvent] = []
     
+    var upcomingHypheeEvents: [HypheeEvent] {
+        return hypheeEvents.filter { $0.date > Date().dateAt(.startOfDay) }.sorted { $0.date < $1.date }
+    }
+    
+    var pastHypheeEvents: [HypheeEvent] {
+        return hypheeEvents.filter { $0.date < Date().dateAt(.startOfDay) }.sorted { $0.date < $1.date }
+    }
+    
     func saveData() {
         DispatchQueue.global().async {
             let encoder = JSONEncoder()
