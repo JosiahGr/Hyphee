@@ -12,6 +12,9 @@ struct HypheeApp: App {
     var body: some Scene {
         WindowGroup {
             HypheeTabView()
+                .onAppear {
+                    DataController.shared.loadData()
+                }
         }
     }
 }

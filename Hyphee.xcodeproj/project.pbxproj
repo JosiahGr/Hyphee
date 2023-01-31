@@ -10,6 +10,7 @@
 		338E18302988706E002FC3D1 /* FormLabelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 338E182F2988706E002FC3D1 /* FormLabelView.swift */; };
 		338E18362989609E002FC3D1 /* SwiftDate in Frameworks */ = {isa = PBXBuildFile; productRef = 338E18352989609E002FC3D1 /* SwiftDate */; };
 		338E18382989641D002FC3D1 /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 338E18372989641D002FC3D1 /* DataController.swift */; };
+		338E183D29896C25002FC3D1 /* UIColorHexSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 338E183C29896C25002FC3D1 /* UIColorHexSwift */; };
 		33CC82C72987345800B3A989 /* CreateHypheeEventView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33CC82C62987345800B3A989 /* CreateHypheeEventView.swift */; };
 		33CC82C9298734BA00B3A989 /* HypheeEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33CC82C8298734BA00B3A989 /* HypheeEvent.swift */; };
 		33CC8320298748BC00B3A989 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33CC831F298748BC00B3A989 /* ImagePicker.swift */; };
@@ -22,7 +23,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		338E182F2988706E002FC3D1 /* FormLabelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = FormLabelView.swift; path = ../FormLabelView.swift; sourceTree = "<group>"; };
+		338E182F2988706E002FC3D1 /* FormLabelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormLabelView.swift; sourceTree = "<group>"; };
 		338E18372989641D002FC3D1 /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
 		33CC82C62987345800B3A989 /* CreateHypheeEventView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateHypheeEventView.swift; sourceTree = "<group>"; };
 		33CC82C8298734BA00B3A989 /* HypheeEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HypheeEvent.swift; sourceTree = "<group>"; };
@@ -42,6 +43,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				338E183D29896C25002FC3D1 /* UIColorHexSwift in Frameworks */,
 				338E18362989609E002FC3D1 /* SwiftDate in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -49,6 +51,27 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		338E1839298969BC002FC3D1 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				33CC82C8298734BA00B3A989 /* HypheeEvent.swift */,
+				338E18372989641D002FC3D1 /* DataController.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		338E183A298969E8002FC3D1 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				33CC82C62987345800B3A989 /* CreateHypheeEventView.swift */,
+				33CC83212988259600B3A989 /* HypheeEventTileView.swift */,
+				338E182F2988706E002FC3D1 /* FormLabelView.swift */,
+				33E3E3DD29864A180070FBF7 /* UpcomingView.swift */,
+				33CC831F298748BC00B3A989 /* ImagePicker.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		33E3E3C0298646B50070FBF7 = {
 			isa = PBXGroup;
 			children = (
@@ -70,13 +93,8 @@
 			children = (
 				33E3E3CC298646B50070FBF7 /* HypheeApp.swift */,
 				33E3E3CE298646B50070FBF7 /* HypheeTabView.swift */,
-				33E3E3DD29864A180070FBF7 /* UpcomingView.swift */,
-				33CC83212988259600B3A989 /* HypheeEventTileView.swift */,
-				33CC82C62987345800B3A989 /* CreateHypheeEventView.swift */,
-				33CC831F298748BC00B3A989 /* ImagePicker.swift */,
-				33CC82C8298734BA00B3A989 /* HypheeEvent.swift */,
-				338E18372989641D002FC3D1 /* DataController.swift */,
-				338E182F2988706E002FC3D1 /* FormLabelView.swift */,
+				338E183A298969E8002FC3D1 /* Views */,
+				338E1839298969BC002FC3D1 /* Data */,
 				33E3E3D0298646B60070FBF7 /* Assets.xcassets */,
 				33E3E3D2298646B60070FBF7 /* Hyphee.entitlements */,
 				33E3E3D3298646B60070FBF7 /* Preview Content */,
@@ -110,6 +128,7 @@
 			name = Hyphee;
 			packageProductDependencies = (
 				338E18352989609E002FC3D1 /* SwiftDate */,
+				338E183C29896C25002FC3D1 /* UIColorHexSwift */,
 			);
 			productName = Hyphee;
 			productReference = 33E3E3C9298646B50070FBF7 /* Hyphee.app */;
@@ -141,6 +160,7 @@
 			mainGroup = 33E3E3C0298646B50070FBF7;
 			packageReferences = (
 				338E18342989609E002FC3D1 /* XCRemoteSwiftPackageReference "SwiftDate" */,
+				338E183B29896C25002FC3D1 /* XCRemoteSwiftPackageReference "UIColor-Hex-Swift" */,
 			);
 			productRefGroup = 33E3E3CA298646B50070FBF7 /* Products */;
 			projectDirPath = "";
@@ -400,6 +420,14 @@
 				version = 6.2.0;
 			};
 		};
+		338E183B29896C25002FC3D1 /* XCRemoteSwiftPackageReference "UIColor-Hex-Swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/yeahdongcn/UIColor-Hex-Swift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.1.1;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -407,6 +435,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 338E18342989609E002FC3D1 /* XCRemoteSwiftPackageReference "SwiftDate" */;
 			productName = SwiftDate;
+		};
+		338E183C29896C25002FC3D1 /* UIColorHexSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 338E183B29896C25002FC3D1 /* XCRemoteSwiftPackageReference "UIColor-Hex-Swift" */;
+			productName = UIColorHexSwift;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

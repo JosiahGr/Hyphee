@@ -93,6 +93,7 @@ struct CreateHypheeEventView: View {
                 Text("Cancel")
             }, trailing: Button(action: {
                 DataController.shared.hypheeEvents.append(hypheeEvent)
+                DataController.shared.saveData()
                 presentationMode.wrappedValue.dismiss()
             }) {
                 Text("Done")
