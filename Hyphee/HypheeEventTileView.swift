@@ -33,9 +33,9 @@ struct HypheeEventTileView: View {
             HStack {
                 Image(systemName: "calendar")
                     .foregroundColor(.red)
-                Text("SEP 4")
+                Text(hypheeEvent.dateAsString())
                 Spacer()
-                Text("Next Month")
+                Text(hypheeEvent.timeFromNow())
                 Image(systemName: "clock.fill")
                     .foregroundColor(.blue)
             }
@@ -54,5 +54,6 @@ struct HypheeEventTileView_Previews: PreviewProvider {
     static var previews: some View {
         HypheeEventTileView(hypheeEvent: testHypheeEvent1)
             .previewLayout(.sizeThatFits)
+            
     }
 }
