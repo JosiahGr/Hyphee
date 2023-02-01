@@ -10,6 +10,7 @@
 		336E52792989C47300FC483C /* HypheeEventListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 336E52782989C47300FC483C /* HypheeEventListView.swift */; };
 		336E527B2989C7D400FC483C /* PastView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 336E527A2989C7D400FC483C /* PastView.swift */; };
 		336E527D298ABDE500FC483C /* DiscoverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 336E527C298ABDE500FC483C /* DiscoverView.swift */; };
+		336E527F298AC25E00FC483C /* HypheeEventDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 336E527E298AC25E00FC483C /* HypheeEventDetailView.swift */; };
 		338E18302988706E002FC3D1 /* FormLabelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 338E182F2988706E002FC3D1 /* FormLabelView.swift */; };
 		338E18362989609E002FC3D1 /* SwiftDate in Frameworks */ = {isa = PBXBuildFile; productRef = 338E18352989609E002FC3D1 /* SwiftDate */; };
 		338E18382989641D002FC3D1 /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 338E18372989641D002FC3D1 /* DataController.swift */; };
@@ -29,6 +30,7 @@
 		336E52782989C47300FC483C /* HypheeEventListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HypheeEventListView.swift; sourceTree = "<group>"; };
 		336E527A2989C7D400FC483C /* PastView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PastView.swift; sourceTree = "<group>"; };
 		336E527C298ABDE500FC483C /* DiscoverView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverView.swift; sourceTree = "<group>"; };
+		336E527E298AC25E00FC483C /* HypheeEventDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HypheeEventDetailView.swift; sourceTree = "<group>"; };
 		338E182F2988706E002FC3D1 /* FormLabelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormLabelView.swift; sourceTree = "<group>"; };
 		338E18372989641D002FC3D1 /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
 		33CC82C62987345800B3A989 /* CreateHypheeEventView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateHypheeEventView.swift; sourceTree = "<group>"; };
@@ -69,6 +71,7 @@
 		338E183A298969E8002FC3D1 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				336E527E298AC25E00FC483C /* HypheeEventDetailView.swift */,
 				336E527C298ABDE500FC483C /* DiscoverView.swift */,
 				336E52782989C47300FC483C /* HypheeEventListView.swift */,
 				33CC82C62987345800B3A989 /* CreateHypheeEventView.swift */,
@@ -198,6 +201,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				33E3E3CF298646B50070FBF7 /* HypheeTabView.swift in Sources */,
+				336E527F298AC25E00FC483C /* HypheeEventDetailView.swift in Sources */,
 				33CC83222988259600B3A989 /* HypheeEventTileView.swift in Sources */,
 				336E527B2989C7D400FC483C /* PastView.swift in Sources */,
 				33E3E3CD298646B50070FBF7 /* HypheeApp.swift in Sources */,

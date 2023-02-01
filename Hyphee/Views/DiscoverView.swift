@@ -12,7 +12,8 @@ struct DiscoverView: View {
     @ObservedObject var data = DataController.shared
     
     var body: some View {
-        HypheeEventListView(HypheeEvents: data.discoverHypheeEvents.sorted { $0.date < $1.date }, noEventsText: "Loading events for you!")
+        HypheeEventListView(HypheeEvents:
+            data.discoverHypheeEvents.sorted { $0.date < $1.date }, noEventsText: "Loading events for you!")
             .navigationTitle("Discover")
             .navigationBarItems(trailing:
                                     Button(action: {

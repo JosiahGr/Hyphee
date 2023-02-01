@@ -74,6 +74,10 @@ class HypheeEvent: ObservableObject, Identifiable, Codable {
         return date.toRelative()
     }
     
+    func validURL() -> URL? {
+        URL(string: url)
+    }
+    
 }
 
 var testHypheeEvent1: HypheeEvent {
