@@ -24,6 +24,32 @@ class DataController: ObservableObject {
         return hypheeEvents.filter { $0.date < Date().dateAt(.startOfDay) }.sorted { $0.date < $1.date }
     }
     
+    func addFromDiscover(hypheeEvent: HypheeEvent) {
+        hypheeEvents.append(hypheeEvent)
+        hypheeEvent.objectWillChange.send()
+        saveData()
+    }
+    
+    func deleteHypheeEvent(hypheeEvent: HypheeEvent) {
+        if let index = hypheeEvents.firstIndex(where: { loopingHypheeEvent -> Bool in
+            return hypheeEvent.id == loopingHypheeEvent.id
+        }) {
+            hypheeEvents.remove(at: index)
+        }
+        saveData()
+    }
+    
+    func saveHypheeEvent(hypheeEvent: HypheeEvent) {
+        if let index = hypheeEvents.firstIndex(where: { loopingHypheeEvent -> Bool in
+            return hypheeEvent.id == loopingHypheeEvent.id
+        }) {
+            hypheeEvents[index] = hypheeEvent
+        } else {
+            hypheeEvents.append(hypheeEvent)
+        }
+        saveData()
+    }
+    
     func saveData() {
         DispatchQueue.global().async {
             let encoder = JSONEncoder()
@@ -63,6 +89,7 @@ class DataController: ObservableObject {
                                hypheeEvent.id = id
                            }
                           if let dateString = jsonHypheeEvent["date"] {
+                              SwiftDate.defaultRegion = Region.local
                                if let dateInRegion = dateString.toDate() {
                                    hypheeEvent.date = dateInRegion.date
                                }

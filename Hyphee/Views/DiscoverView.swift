@@ -13,7 +13,7 @@ struct DiscoverView: View {
     
     var body: some View {
         HypheeEventListView(HypheeEvents:
-            data.discoverHypheeEvents.sorted { $0.date < $1.date }, noEventsText: "Loading events for you!")
+            data.discoverHypheeEvents.sorted { $0.date < $1.date }, noEventsText: "Loading events for you!", isDiscover: true)
             .navigationTitle("Discover")
             .navigationBarItems(trailing:
                                     Button(action: {

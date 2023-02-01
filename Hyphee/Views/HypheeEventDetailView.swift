@@ -9,8 +9,12 @@ import SwiftUI
 
 
 struct HypheeEventDetailView: View {
-    var hypheeEvent: HypheeEvent
+    @ObservedObject var hypheeEvent: HypheeEvent
+    @State var showingCreateView = false
+    @Environment(\.presentationMode) var presentationMode
+    
     var isDiscover = false
+    
     
     var body: some View {
         VStack(spacing: 0) {
@@ -36,25 +40,40 @@ struct HypheeEventDetailView: View {
             Spacer()
             
             if hypheeEvent.validURL() != nil {
-                Button(action: {}) {
+                Button(action: {
+                    UIApplication.shared.open(hypheeEvent.validURL()!)
+                }) {
                     HypheeEventDetailViewButton(backgroundColor: .orange, imageName: "link", text: "Visit Site")
                 }
             }
             
             if isDiscover {
-                Button(action: {}) {
-                    HypheeEventDetailViewButton(backgroundColor: .blue, imageName: "plus.circle", text: "Add")
+                Button(action: {
+                    DataController.shared.addFromDiscover(hypheeEvent: hypheeEvent)
+                    presentationMode.wrappedValue.dismiss()
+                }) {
+                    HypheeEventDetailViewButton(backgroundColor: .blue, imageName: "plus.circle", text: hypheeEvent.hasBeenAdded ? "Added" : "Add")
                 }
+                .disabled(hypheeEvent.hasBeenAdded)
+                .opacity(hypheeEvent.hasBeenAdded ? 0.5 : 1.0)
             } else {
-                Button(action: {}) {
+                Button(action: {
+                    showingCreateView = true
+                }) {
                     HypheeEventDetailViewButton(backgroundColor: .yellow, imageName: "pencil.circle", text: "Edit")
                 }
+                .sheet(isPresented: $showingCreateView) {
+                    CreateHypheeEventView(hypheeEvent: hypheeEvent)
+                }
                 
-                Button(action: {}) {
+                Button(action: {
+                    DataController.shared.deleteHypheeEvent(hypheeEvent: hypheeEvent)
+                }) {
                 HypheeEventDetailViewButton(backgroundColor: .red, imageName: "trash", text: "Delete")
                 }
             }
         }
+        .navigationBarTitleDisplayMode(.inline)
     }
 }
 
@@ -77,7 +96,7 @@ struct HypheeEventDetailViewButton: View {
         .foregroundColor(.white)
         .cornerRadius(5)
         .padding(.horizontal, 20)
-        .padding(.top, 12)
+        .padding(.bottom, 12)
     }
 }
 

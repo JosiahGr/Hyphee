@@ -11,11 +11,11 @@ import SwiftDate
 import UIColorHexSwift
 
 class HypheeEvent: ObservableObject, Identifiable, Codable {
-    var id = UUID().uuidString
-    var date = Date()
-    var title = ""
-    var url = ""
-    var color = Color.orange
+    @Published var id = UUID().uuidString
+    @Published var date = Date()
+    @Published var title = ""
+    @Published var url = ""
+    @Published var color = Color.orange
     @Published var imageData: Data?
     
     enum CodingKeys: String, CodingKey {
@@ -49,6 +49,17 @@ class HypheeEvent: ObservableObject, Identifiable, Codable {
     }
     
     init() {
+    }
+    
+    var hasBeenAdded: Bool {
+        let hypheeEvent = DataController.shared.hypheeEvents.first { (hypheeEvent) -> Bool in
+            return hypheeEvent.id == self.id
+        }
+        if hypheeEvent != nil {
+            return true
+        } else {
+            return false
+        }
     }
     
     func image() -> Image? {

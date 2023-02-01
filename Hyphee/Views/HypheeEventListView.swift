@@ -11,6 +11,7 @@ struct HypheeEventListView: View {
     
     var HypheeEvents: [HypheeEvent]
     var noEventsText: String
+    var isDiscover = false
     
     var body: some View {
         ScrollView {
@@ -24,7 +25,10 @@ struct HypheeEventListView: View {
                     
                 } else {
                     ForEach(HypheeEvents) { hypheeEvent in
-                        HypheeEventTileView(hypheeEvent: hypheeEvent)
+                        NavigationLink( destination: HypheeEventDetailView(hypheeEvent: hypheeEvent, isDiscover: isDiscover)) {
+                            HypheeEventTileView(hypheeEvent: hypheeEvent)
+                        }
+                        .buttonStyle(PlainButtonStyle())
                     }
                 }
             }
