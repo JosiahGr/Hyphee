@@ -14,6 +14,7 @@ struct HypheeApp: App {
             HypheeTabView()
                 .onAppear() {
                     DataController.shared.loadData()
+                    DataController.shared.getDiscoverEvents()
                 }
         }
     }
