@@ -10,7 +10,7 @@ import SwiftUI
 
 struct HypheeEventDetailView: View {
     @ObservedObject var hypheeEvent: HypheeEvent
-    @State var showingCreateView = false
+    @State private var showingCreateView = false
     @Environment(\.presentationMode) var presentationMode
     
     var isDiscover = false

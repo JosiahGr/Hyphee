@@ -16,10 +16,13 @@ class DataController: ObservableObject {
     @Published var hypheeEvents: [HypheeEvent] = []
     @Published var discoverHypheeEvents: [HypheeEvent] = []
     
+    
+    //: Filters all events starting with the closest to todays date on top.
     var upcomingHypheeEvents: [HypheeEvent] {
         return hypheeEvents.filter { $0.date > Date().dateAt(.startOfDay) }.sorted { $0.date < $1.date }
     }
     
+    //: Filters all events that are before todays date.
     var pastHypheeEvents: [HypheeEvent] {
         return hypheeEvents.filter { $0.date < Date().dateAt(.startOfDay) }.sorted { $0.date < $1.date }
     }

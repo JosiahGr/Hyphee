@@ -11,8 +11,8 @@ struct CreateHypheeEventView: View {
     
     @Environment(\.presentationMode) var presentationMode
     @StateObject var hypheeEvent = HypheeEvent()
-    @State var showTime = false
-    @State var showImagePicker = false
+    @State private var showTime = false
+    @State private var showImagePicker = false
     
     var body: some View {
         NavigationView() {

@@ -71,14 +71,14 @@
 		338E183A298969E8002FC3D1 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				336E527E298AC25E00FC483C /* HypheeEventDetailView.swift */,
+				33E3E3DD29864A180070FBF7 /* UpcomingView.swift */,
 				336E527C298ABDE500FC483C /* DiscoverView.swift */,
+				336E527A2989C7D400FC483C /* PastView.swift */,
+				338E182F2988706E002FC3D1 /* FormLabelView.swift */,
+				336E527E298AC25E00FC483C /* HypheeEventDetailView.swift */,
 				336E52782989C47300FC483C /* HypheeEventListView.swift */,
 				33CC82C62987345800B3A989 /* CreateHypheeEventView.swift */,
 				33CC83212988259600B3A989 /* HypheeEventTileView.swift */,
-				338E182F2988706E002FC3D1 /* FormLabelView.swift */,
-				33E3E3DD29864A180070FBF7 /* UpcomingView.swift */,
-				336E527A2989C7D400FC483C /* PastView.swift */,
 				33CC831F298748BC00B3A989 /* ImagePicker.swift */,
 			);
 			path = Views;

@@ -9,7 +9,7 @@ import SwiftUI
 
 struct UpcomingView: View {
     
-    @State var showingCreateView = false
+    @State private var showingCreateView = false
     @ObservedObject var data = DataController.shared
     
     var body: some View {
